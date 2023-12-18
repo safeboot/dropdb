@@ -42,3 +42,6 @@ php artisan migrate --seed
 - [ ] Drop Submission Form
 - [ ] Share Links per Drop
 - [ ] Leaderboard (per host)
+
+## License
+This project is under the MIT license, for more information, view the [LICENSE.md](LICENSE.md) file.
