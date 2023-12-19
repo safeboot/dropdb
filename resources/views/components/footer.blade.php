@@ -13,7 +13,7 @@
 
             </p>
 
-            <p class="mt-4 text-sm text-indigo-400">Developed By Safeboot, with help from LTT community! <3</p>
+            <p class="mt-4 text-sm text-indigo-400">Developed By Safeboot, with help from LTT community! &lt;3</p>
 
         </div>
 
