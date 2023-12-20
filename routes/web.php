@@ -3,6 +3,7 @@
 use App\Http\Controllers\DropController;
 use App\Http\Controllers\DropSubmissionController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LeaderboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,8 @@ Route::middleware('splade')->group(function () {
     Route::get('/', HomeController::class)->name('home');
 
     Route::get('/drop/{drop:slug}', DropController::class)->name('drop');
+
+    Route::get('/leaderboard', LeaderboardController::class)->name('leaderboard');
 
     Route::post('/submit-drop',  DropSubmissionController::class)->name('submit-drop');
 

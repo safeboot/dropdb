@@ -20,7 +20,7 @@
 
             </Link>
 
-            <Link href="{{ route('home') }}" class="relative group hidden md:block text-xl text-white">
+            <Link href="{{ route('leaderboard') }}" class="relative group hidden md:block text-xl text-white">
 
                 Leaderboard
 
@@ -66,7 +66,7 @@
 
         <Link href="{{ route('home') }}" @click="menu.open = false" class="@if(Route::is('home')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Home</Link>
 
-        <Link href="{{ route('home') }}" @click="menu.open = false" class="@if(Route::is('leaderboard')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Leaderboard</Link>
+        <Link href="{{ route('leaderboard') }}" @click="menu.open = false" class="@if(Route::is('leaderboard')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Leaderboard</Link>
 
         <Link href="{{ route('home') }}" @click="menu.open = false" class="@if(Route::is('credits')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Credits</Link>
 
