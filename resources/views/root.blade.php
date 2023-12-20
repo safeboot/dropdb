@@ -19,6 +19,9 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/25f7ef40e8.js" crossorigin="anonymous"></script>
 
+        <!-- Cloudflare Turnstile -->
+        @turnstileScripts()
+
         <!-- Scripts -->
         @vite(['resources/js/app.js'])
         @spladeHead
