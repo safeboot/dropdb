@@ -35,7 +35,7 @@
 
             <h1 class="p-6 text-2xl text-white font-semibold">HOSTS</h1>
 
-            <div class="w-full px-6 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+            <div class="w-full px-6 pb-6 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
 
                 @foreach($drop->people->sortByDesc('is_dropper', true) as $host)
 
