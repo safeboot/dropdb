@@ -7,6 +7,8 @@ import { renderSpladeApp, SpladePlugin } from "@protonemedia/laravel-splade";
 
 import { MotionPlugin } from '@vueuse/motion'
 
+import NumberAnimation from "vue-number-animation";
+
 const el = document.getElementById("app");
 
 createApp({
@@ -16,7 +18,10 @@ createApp({
         "max_keep_alive": 10,
         "transform_anchors": false,
         "progress_bar": true,
-        "view_transitions": true
+        "view_transitions": true,
+        "components": {
+            NumberAnimation
+        }
     })
     .use(MotionPlugin)
     .mount(el);

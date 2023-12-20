@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "@vueuse/motion": "^2.0.0",
-        "defu": "^6.1.3"
+        "defu": "^6.1.3",
+        "vue-number-animation": "^2.0.2"
     }
 }

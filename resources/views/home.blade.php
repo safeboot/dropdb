@@ -27,6 +27,65 @@
 
             </div>
 
+            <div class="stats divide-x divide-[#434242] grid grid-cols-3">
+
+                <div class="stat text-center p-6 flex flex-col justify-center items-center">
+
+                    <p class="text-lg text-neutral-300">DROP COUNT</p>
+
+                    <h1 class="text-xl text-white font-semibold">
+
+                        <NumberAnimation
+                            :from="0"
+                            :to="{{ number_format(\App\Models\Drop::count()) }}"
+                            :duration="5"
+                            autoplay
+                            easing="linear"
+                        />
+
+                    </h1>
+
+                </div>
+
+                <div class="stat text-center p-6 flex flex-col justify-center items-center">
+
+                    <p class="text-lg text-neutral-300">HOST COUNT</p>
+
+                    <h1 class="text-xl text-white font-semibold">
+
+                        <NumberAnimation
+                            :from="0"
+                            :to="{{ number_format(\App\Models\Person::count()) }}"
+                            :duration="5"
+                            autoplay
+                            easing="linear"
+                        />
+
+                    </h1>
+
+                </div>
+
+                <div class="stat text-center p-6 flex flex-col justify-center items-center">
+
+                    <p class="text-lg text-neutral-300">AVG. RATING</p>
+
+                    <h1 class="text-xl text-white font-semibold">
+
+                        <NumberAnimation
+                            :from="100"
+                            :to="10000"
+                            :format="theFormat"
+                            :duration="5"
+                            autoplay
+                            easing="linear"
+                        />
+
+                    </h1>
+
+                </div>
+
+            </div>
+
         </div>
 
         <div class="timeline overflow-hidden">
