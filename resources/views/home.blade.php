@@ -15,13 +15,13 @@
 
                     <h1 class="text-lg text-neutral-300">Have a drop I missed? Fill the form below, and I'll review your drop (eventually).</h1>
 
-                    <button class="group w-max bg-indigo-600 text-white px-8 py-4 flex justify-center items-center gap-2 hover:bg-indigo-700 transition duration-300">
+                    <Link href="#submit-a-drop" class="group w-max bg-indigo-600 text-white px-8 py-4 flex justify-center items-center gap-2 hover:bg-indigo-700 transition duration-300">
 
                         <i class="fa-solid fa-plus group-hover:rotate-90 transition duration-300"></i>
 
                         <p>SUBMIT A DROP</p>
 
-                    </button>
+                    </Link>
 
                 </div>
 
@@ -147,4 +147,6 @@
         </div>
 
     </div>
+
+    @include('components.modals.submit-a-drop')
 @endsection

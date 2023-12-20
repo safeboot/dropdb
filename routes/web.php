@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DropController;
+use App\Http\Controllers\DropSubmissionController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,8 @@ Route::middleware('splade')->group(function () {
     Route::get('/', HomeController::class)->name('home');
 
     Route::get('/drop/{drop:slug}', DropController::class)->name('drop');
+
+    Route::post('/submit-drop',  DropSubmissionController::class)->name('submit-drop');
 
 //    require __DIR__.'/auth.php';
 });
