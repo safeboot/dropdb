@@ -36,6 +36,8 @@ Route::middleware('splade')->group(function () {
 
     Route::get('/leaderboard', LeaderboardController::class)->name('leaderboard');
 
+    Route::view('/credits', 'credits')->name('credits');
+
     Route::post('/submit-drop',  DropSubmissionController::class)->name('submit-drop');
 
 //    require __DIR__.'/auth.php';

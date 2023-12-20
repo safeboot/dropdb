@@ -28,7 +28,7 @@
 
             </Link>
 
-            <Link href="{{ route('home') }}" class="relative group hidden md:block text-xl text-white">
+            <Link href="{{ route('credits') }}" class="relative group hidden md:block text-xl text-white">
 
                 Credits
 
@@ -68,7 +68,7 @@
 
         <Link href="{{ route('leaderboard') }}" @click="menu.open = false" class="@if(Route::is('leaderboard')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Leaderboard</Link>
 
-        <Link href="{{ route('home') }}" @click="menu.open = false" class="@if(Route::is('credits')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Credits</Link>
+        <Link href="{{ route('credits') }}" @click="menu.open = false" class="@if(Route::is('credits')) border-l-4 border-white pl-4 @endif text-white text-4xl font-semibold">Credits</Link>
 
     </div>
 
