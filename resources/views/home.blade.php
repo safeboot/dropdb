@@ -29,7 +29,7 @@
 
             <div class="stats divide-x divide-[#434242] grid grid-cols-3">
 
-                <div class="stat text-center p-6 flex flex-col justify-center items-center">
+                <div class="stat text-center p-6 border-b-0 lg:border-b border-[#434242] flex flex-col justify-center items-center">
 
                     <p class="text-lg text-neutral-300">DROP COUNT</p>
 
@@ -39,7 +39,7 @@
                             :from="0"
                             :to="{{ number_format(\App\Models\Drop::count()) }}"
                             :format="value => value.toFixed(0)"
-                            :duration="5"
+                            :duration="3"
                             autoplay
                             easing="linear"
                         />
@@ -48,7 +48,7 @@
 
                 </div>
 
-                <div class="stat text-center p-6 flex flex-col justify-center items-center">
+                <div class="stat text-center p-6 border-b-0 lg:border-b border-[#434242] flex flex-col justify-center items-center">
 
                     <p class="text-lg text-neutral-300">HOST COUNT</p>
 
@@ -58,7 +58,7 @@
                             :from="0"
                             :to="{{ number_format(\App\Models\Person::count()) }}"
                             :format="value => value.toFixed(0)"
-                            :duration="5"
+                            :duration="3"
                             autoplay
                             easing="linear"
                         />
@@ -67,7 +67,7 @@
 
                 </div>
 
-                <div class="stat text-center p-6 flex flex-col justify-center items-center">
+                <div class="stat text-center p-6 border-b-0 lg:border-b border-[#434242] flex flex-col justify-center items-center">
 
                     <p class="text-lg text-neutral-300">AVG. RATING</p>
 
@@ -76,8 +76,8 @@
                         <NumberAnimation
                             :from="0"
                             :to="{{ number_format(\App\Models\Drop::avg('rating'), 2) }}"
-                            :format="value => value.toFixed(0)"
-                            :duration="5"
+                            :format="value => value.toFixed(1)"
+                            :duration="3"
                             autoplay
                             easing="linear"
                         />
