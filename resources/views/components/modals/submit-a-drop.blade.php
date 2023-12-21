@@ -1,4 +1,4 @@
-<x-splade-modal name="submit-a-drop" max-width="lg" class="bg-neutral-900 flex flex-col gap-4">
+<x-splade-modal name="submit-a-drop" max-width="lg" class="!bg-neutral-900 flex flex-col gap-4">
 
     <div class="flex flex-col">
 
