@@ -7,7 +7,7 @@
 
         <div class="md:text-right flex flex-col md:items-end">
 
-            <p class="text-neutral-300">Sort By:</p>
+            <p class="text-neutral-300">Filter By:</p>
 
             <div class="flex items-center gap-6">
 

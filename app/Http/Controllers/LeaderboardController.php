@@ -19,7 +19,7 @@ class LeaderboardController extends Controller
 
             case 'host':
                 $scores = Person::all()->sortByDesc(function ($host) {
-                    return $host->drops->where('is_dropper', true)->count();
+                    return $host->drops()->where('is_dropper', true)->count();
                 });
                 break;
 
