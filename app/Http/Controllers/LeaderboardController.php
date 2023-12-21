@@ -6,6 +6,7 @@ use App\Models\Channel;
 use App\Models\Drop;
 use App\Models\Person;
 use Illuminate\Http\Request;
+use ProtoneMedia\Splade\Facades\SEO;
 
 class LeaderboardController extends Controller
 {
@@ -28,6 +29,8 @@ class LeaderboardController extends Controller
                 });
 
         }
+
+        SEO::title('Leaderboard');
 
         return view('leaderboard', compact('scores'));
 

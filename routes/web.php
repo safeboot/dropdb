@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CreditsController;
 use App\Http\Controllers\DropController;
 use App\Http\Controllers\DropSubmissionController;
 use App\Http\Controllers\HomeController;
@@ -36,7 +37,7 @@ Route::middleware('splade')->group(function () {
 
     Route::get('/leaderboard', LeaderboardController::class)->name('leaderboard');
 
-    Route::view('/credits', 'credits')->name('credits');
+    Route::get('/credits', CreditsController::class)->name('credits');
 
     Route::post('/submit-drop',  DropSubmissionController::class)->name('submit-drop');
 
