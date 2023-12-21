@@ -49,9 +49,9 @@ class HomeController extends Controller
 
             $date = $request->get('date');
 
-            $date = Str::contains('to', $date) ? explode(' to ', $date) : $date;
+            $date = Str::contains($date, 'to') ? explode(' to ', $date) : $date;
 
-            if (Str::contains('to', $request->get('date'))) {
+            if (Str::contains($request->get('date'), 'to')) {
 
                 $drops = $drops->whereBetween('created_at', explode(' to ', $date));
 
