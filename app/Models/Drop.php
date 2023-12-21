@@ -23,6 +23,7 @@ class Drop extends Model
         'type',
         'source_url',
         'timestamp',
+        'rating',
         'is_highlighted',
         'channel_id'
 
