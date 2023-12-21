@@ -53,9 +53,9 @@
 
                     <div class="flex flex-col justify-center items-center">
 
-                        <p class="text-lg text-neutral-300">Drop Score</p>
+                        <p class="text-lg text-neutral-300">Avg. Drop Score</p>
 
-                        <h1 class="text-xl text-white font-semibold">{{ number_format(9.6, 1) }}</h1>
+                        <h1 class="text-xl text-white font-semibold">{{ number_format(request()->get('sorting') == 'host' ? $score->drops->where('pivot.is_dropper', true)->avg('rating') : $score->drops->avg('rating'), 1) }}</h1>
 
                     </div>
 
