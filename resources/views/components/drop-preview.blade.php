@@ -1,4 +1,4 @@
-<Link href="{{ route('drop', ['drop' => $drop]) }}" class="drop group p-6 border-b border-[#434242] text-left flex flex-col md:flex-row gap-6 hover:bg-neutral-800 transition duration-300" v-motion-slide-top :delay="{{ ($loop->iteration - 1) * 300 }}">
+<Link href="{{ route('drop', ['drop' => $drop]) }}" class="drop group p-6 border-b border-[#434242] text-left flex flex-col md:flex-row gap-6 hover:bg-neutral-800 transition duration-300" @if($loop->iteration % 2 == 0) v-motion-slide-left @else v-motion-slide-right @endif>
 
     <div class="image relative w-full md:w-2/5 h-max aspect-video flex-shrink-0">
 
