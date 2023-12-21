@@ -32,6 +32,13 @@
 
         @splade
 
+        @if(date('m') == '01' || date('m') == '12')
+
+            <!-- Snow! -->
+            <div id="snow" class="fixed inset-0 z-0 pointer-events-none"></div>
+
+        @endif
+
     </body>
 
 </html>
