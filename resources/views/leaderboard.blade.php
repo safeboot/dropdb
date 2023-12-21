@@ -27,7 +27,7 @@
 
             <div class="score p-6 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
 
-                <div class="flex items-center gap-6">
+                <div class="w-full md:w-max px-4 md:px-0 flex justify-start items-center gap-6">
 
                     <img src="{{ request()->get('sorting') == 'host' ? $score->image : $score->logo }}" class="w-24 h-24 object-cover rounded-full">
 
