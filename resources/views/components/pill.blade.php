@@ -10,6 +10,6 @@
 
     @endif
 
-    <p class="text-sm md:text-base">{{ $name }}</p>
+    <p class="text-sm md:text-base" @isset($iconColor) style="color: {{ $iconColor }}" @endisset>{{ $name }}</p>
 
 </button>

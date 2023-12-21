@@ -25,7 +25,7 @@
 
                 @include('components.pill', ['name' => $drop->channel->name, 'logo' => $drop->channel->logo, 'color' => $drop->channel->color])
 
-{{--                @include('components.pill', ['name' => 'Medium Drop', 'icon' => 'fa-solid fa-tv', 'color' => '#FFFFFF', 'iconColor' => '#000000'])--}}
+                @include('components.pill', ['name' => \App\Enums\DropRating::getRating($drop->rating)->label(), 'icon' => 'fa-solid fa-person-falling-burst', 'color' => \App\Enums\DropRating::getRating($drop->rating)->color()[0], 'iconColor' => \App\Enums\DropRating::getRating($drop->rating)->color()[1]])
 
             </div>
 

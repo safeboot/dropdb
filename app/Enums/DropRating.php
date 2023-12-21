@@ -22,4 +22,30 @@ enum DropRating: string
         }
 
     }
+
+    public function label(): string {
+
+        return match ($this) {
+
+            static::LINUS_SIZED => 'Linus-sized',
+            static::MEDIUM_IMPACT => 'Medium Impact',
+            static::HARD_IMPACT => 'Hard Impact',
+            static::YEP_ITS_BROKEN => 'Yep, It\'s Broken',
+
+        };
+
+    }
+
+    public function color(): array {
+
+        return match ($this) {
+
+            static::LINUS_SIZED => ['#f0a284', '#a15132'],
+            static::MEDIUM_IMPACT => ['#97ff80', '#317023'],
+            static::HARD_IMPACT => ['#263780', '#8fa3f7'],
+            static::YEP_ITS_BROKEN => ['#f21313', '#f5a6a6'],
+
+        };
+
+    }
 }

@@ -20,13 +20,9 @@
 
                 <div class="flex items-center flex-wrap gap-4">
 
-                    <button class="px-2 py-1 flex items-center gap-2 rounded-full" style="background-color: {{ $dropOfTheWeek->channel->color }}">
+                    @include('components.pill', ['name' => $dropOfTheWeek->channel->name, 'logo' => $dropOfTheWeek->channel->logo, 'color' => $dropOfTheWeek->channel->color])
 
-                        <img src="{{ $dropOfTheWeek->channel->logo }}" class="h-5 rounded-full">
-
-                        <p>{{ $dropOfTheWeek->channel->name }}</p>
-
-                    </button>
+                    @include('components.pill', ['name' => \App\Enums\DropRating::getRating($dropOfTheWeek->rating)->label(), 'icon' => 'fa-solid fa-person-falling-burst', 'color' => \App\Enums\DropRating::getRating($dropOfTheWeek->rating)->color()[0], 'iconColor' => \App\Enums\DropRating::getRating($dropOfTheWeek->rating)->color()[1]])
 
                 </div>
 
