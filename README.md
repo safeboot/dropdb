@@ -39,8 +39,8 @@ php artisan migrate --seed
 ## TO-DO
 - [x] Leaderboard (per host)
 - [x] Drop Submission Form
+- [x] Impact Rating
 - [ ] Dashboard
-- [ ] Impact Rating
 - [ ] Share Links per Drop
 
 ## License
