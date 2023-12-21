@@ -38,6 +38,7 @@
                         <NumberAnimation
                             :from="0"
                             :to="{{ number_format(\App\Models\Drop::count()) }}"
+                            :format="value => value.toFixed(0)"
                             :duration="5"
                             autoplay
                             easing="linear"
@@ -56,6 +57,7 @@
                         <NumberAnimation
                             :from="0"
                             :to="{{ number_format(\App\Models\Person::count()) }}"
+                            :format="value => value.toFixed(0)"
                             :duration="5"
                             autoplay
                             easing="linear"
@@ -72,9 +74,9 @@
                     <h1 class="text-xl text-white font-semibold">
 
                         <NumberAnimation
-                            :from="100"
-                            :to="10000"
-                            :format="theFormat"
+                            :from="0"
+                            :to="{{ number_format(\App\Models\Drop::avg('rating'), 2) }}"
+                            :format="value => value.toFixed(0)"
                             :duration="5"
                             autoplay
                             easing="linear"
